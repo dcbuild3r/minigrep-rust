@@ -3,7 +3,6 @@ use std::env;
 use std::process;
 
 fn main() {
-    // --snip--
     let args: Vec<String> = env::args().collect();
 
     let config = Config::new(&args).unwrap_or_else(|err| {
